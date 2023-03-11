@@ -1,0 +1,79 @@
+site_name: My Docs
+theme:
+
+  name: material
+  
+  #palette:
+  #  scheme: default
+
+  palette: 
+
+    # Palette toggle for light mode
+    #- media: "(prefers-color-scheme: light)"
+    - scheme: deep purple
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    #- media: "(prefers-color-scheme: dark)"  
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  language: zh
+
+  #logo: assets/logo.png  
+  favicon: images/favicon.png
+
+  features:
+    - navigation.tracking
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes 
+    - toc.follow
+    - toc.integrate 
+    - navigation.top
+    - header.autohide
+    - navigation.footer
+
+  icon:
+    logo: material/library   
+extra:
+  homepage: https://github.com/
+
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  generator: True
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/serencounts/
+      name: "作者的GitHub首页"
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<zhangjh325@mail2.sysu.edu.cn>
+      name: "请通过邮箱联系我"
+plugins:
+  - search:
+      lang: zh
+  - tags
